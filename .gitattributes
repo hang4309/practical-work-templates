@@ -1,0 +1,3 @@
+
+# Keep delivery manifest byte hashes stable on every checkout.
+creator-handoff/** -text

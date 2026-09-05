@@ -25,3 +25,9 @@ HTML不上传填写内容、不连接外部服务。XLSX没有宏、公式或外
 六题分别练习分隔符、表头别名、合并键、空值、金额精度和Excel日期系统。学员HTML自含全部题目数据，可直接打印作答；讲师页含答案和20–25分钟安排。六个CSV是可选附件，不需要安装Excel或运行代码。
 
 [来源、规则资料与MIT许可说明](training/pre-submit-checks/PROVENANCE.md)。所有数据为新写合成案例，未验证真实培训成效。
+
+## 新增：短视频交付包
+
+[可播放示例与使用步骤](creator-handoff/index.html) · [完整离线包](https://github.com/hang4309/practical-work-templates/releases/download/v0.3.0/creator-handoff-v0.3.0.zip)
+
+给剪辑师、内容工作室和课程助教：一份实际36秒无声视频、SRT画面摘要、时间线、素材及版本记录、交付说明/修改意见模板。无需编程即可取用文字材料；Python只读核对器为可选项，检查路径、哈希、SRT时间与声明的画面绑定。来源0817/1220/1465/2259/2793的结构已改编，[范围与来源](creator-handoff/PROVENANCE.md)。没有客户签收或视频平台投稿声明。

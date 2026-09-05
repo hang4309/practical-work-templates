@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "project": "equal-totals-editor-handoff",
+  "picture": {
+    "path": "media/equal-totals-picture-v1.mp4",
+    "version": "picture-v1",
+    "duration_seconds": 36,
+    "frame_rate": "25/1",
+    "width": 1080,
+    "height": 1920,
+    "audio": "none"
+  },
+  "assets": [
+    {
+      "path": "change-log.md",
+      "role": "reference",
+      "sha256": "e2ac27bdf24141fa6bfd18a7a6dfa8061a5b0a42363b1865732ea3c7222c61bb"
+    },
+    {
+      "path": "media/card-01.png",
+      "role": "reference",
+      "sha256": "b428e48258c9606fdc53a362b65f3c224f9ba6578d9c28d1d2707eb05e5fdf80"
+    },
+    {
+      "path": "media/card-02.png",
+      "role": "reference",
+      "sha256": "6cd27d95a45a7307c753a8c94a330c38d61cc4482fc3ce7385fe092b0973a2b9"
+    },
+    {
+      "path": "media/card-03.png",
+      "role": "reference",
+      "sha256": "c2e14e29dd6ff51213fd8a455424aa0f545c4c52ca7e6c76ee1772149f9476c5"
+    },
+    {
+      "path": "media/card-04.png",
+      "role": "reference",
+      "sha256": "314867cc6701111fb91b9f4095af3f74f3e808203d145bbbe6298481b9583bd9"
+    },
+    {
+      "path": "media/card-05.png",
+      "role": "reference",
+      "sha256": "4984dd0950f386f5a2864e107e66134e2713067dd10b32b3bd9efc67dfc0cd46"
+    },
+    {
+      "path": "media/card-06.png",
+      "role": "reference",
+      "sha256": "ab1e868ad4c6221e2f57d4c3778631147c4b9502f27029c0ad2fa869bd58155f"
+    },
+    {
+      "path": "media/cover-v1.png",
+      "role": "reference",
+      "sha256": "b428e48258c9606fdc53a362b65f3c224f9ba6578d9c28d1d2707eb05e5fdf80"
+    },
+    {
+      "path": "media/equal-totals-picture-v1.mp4",
+      "role": "picture",
+      "sha256": "5b637d1f1e1a53d4697ad896706d8a8ad2deb3b0eb7f88257eb59b99c16c0239"
+    },
+    {
+      "path": "source-register.md",
+      "role": "reference",
+      "sha256": "1b413d0d70d21ff65652cdfcfefc67ca13de10d7693dc1d42e1cdac40ec8464f"
+    },
+    {
+      "path": "style-v1.md",
+      "role": "reference",
+      "sha256": "820f08171f520174046c7b778ccb97a53f043827686b6a31898ad45481c61835"
+    },
+    {
+      "path": "subtitles/equal-totals_zh-CN_picture-v1.srt",
+      "role": "subtitle",
+      "sha256": "7993c0edfad9b75112ea601bf8920ff58cf93393a74cb66df88992d4cff22401",
+      "language": "zh-CN",
+      "picture_version": "picture-v1",
+      "style_version": "style-v1"
+    },
+    {
+      "path": "timeline.md",
+      "role": "reference",
+      "sha256": "78f16584f0905302242548d851884d37f8f891ee7f3cee03943240a84f0719ee"
+    }
+  ],
+  "manual_review": {
+    "picture_content": "six original cards; synthetic data",
+    "audio": "not_applicable_no_audio_track",
+    "subtitle_meaning": "screen summary; no spoken transcript",
+    "source_records": "see source-register.md",
+    "client_acceptance": "not_requested",
+    "platform_publication": "not_submitted"
+  }
+}
