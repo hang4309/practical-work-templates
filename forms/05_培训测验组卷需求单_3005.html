@@ -1,6 +1,33 @@
 <!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>培训测验组卷需求单</title><style>body{font:15px/1.5 Arial,"Microsoft YaHei";max-width:900px;margin:auto;padding:28px;color:#172033}h1{margin:0}.note{background:#eff6ff;padding:12px;border-left:4px solid #2563eb}label{display:block;font-weight:700;margin-top:10px}input,select,textarea{width:100%;box-sizing:border-box;padding:7px;border:1px solid #94a3b8;border-radius:4px;font:inherit}textarea{height:50px}table{width:100%;border-collapse:collapse;margin:12px 0}th,td{border:1px solid #94a3b8;padding:6px}.small{font-size:12px;color:#475569}@media print{body{padding:0}.note{background:none}}
 .toolbar{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.toolbar button{border:1px solid #2563eb;border-radius:5px;background:#fff;color:#1d4ed8;padding:8px 12px;font:inherit;cursor:pointer}.synthetic{padding:9px 12px;background:#fff7ed;border:1px solid #fed7aa;border-radius:5px}.check{width:auto;vertical-align:middle;margin:0 4px 0 10px}@media(max-width:600px){body{padding:16px;overflow-x:hidden}table{display:block;max-width:100%;overflow-x:auto;white-space:nowrap}th,td{min-width:105px}input,select,textarea{min-width:0}.toolbar button{flex:1 1 100%}}@media print{.toolbar{display:none!important}.synthetic{background:none;border:1px solid #94a3b8}table{overflow:visible!important}}
+</style><style id="complete-print-values">
+.print-value{display:none}
+@page{size:A4 landscape;margin:12mm}
+@media print{
+html,body{width:auto!important;max-width:none!important;height:auto!important;overflow:visible!important}
+table{display:table!important;min-width:0!important;width:100%!important;table-layout:fixed;white-space:normal!important}
+th,td{min-width:0!important;overflow-wrap:anywhere;white-space:normal!important;padding:5px!important;font-size:11px}
+.scroll,.table-scroll,.table-wrap{overflow:visible!important}
+input,textarea,select,.toolbar,.buttons,.synthetic,.hint{display:none!important}
+.print-value{display:block;white-space:pre-wrap;overflow-wrap:anywhere;min-height:1em;font:inherit;font-weight:400;line-height:1.5}
+.print-check{display:inline}
+tr{break-inside:avoid} details{display:none!important}
+}
 </style><body><div class="toolbar" aria-label="本地表单操作"><button type="button" onclick="clearForStart()">清空开始填写</button><button type="button" onclick="saveFilledCopy()">保存填好副本 HTML</button><button type="button" onclick="window.print()">打印</button></div><p class="synthetic"><strong>当前为合成示例。</strong>请先另存为副本，再填写自己的已授权信息；本页不会自动上传或连接外部服务。</p><h1>培训测验组卷需求单</h1><details class="small"><summary>模板来源与编辑说明</summary><p class="small">来源项目：3005 Banking MCQ Test Sets。新增编辑：将题库 CSV、类别配额、题量、难度、审核状态和输出偏好改写成委托清单。</p></details><p class="note">原项目是从已审核的四选一题库组卷，不生成题目；示例题目为合成资料。本表不构成银行、法规或任何专业培训意见。</p><label>培训主题与对象<input value="示例：新员工服务流程复习"></label><table><tr><th>类别</th><th>目标题数</th><th>难度</th><th>题库审核状态</th><th>备注</th></tr><tr><td><input value="客户服务"></td><td><input value="6"></td><td><select><option>intermediate</option><option>basic</option><option>advanced</option></select></td><td><select><option>approved</option><option>待审核</option></select></td><td><input value="每题四选一"></td></tr><tr><td><input></td><td><input></td><td><select><option>intermediate</option><option>basic</option></select></td><td><select><option>待审核</option><option>approved</option></select></td><td><input></td></tr></table><p>需要输出：<input type="checkbox" class="check"> 测试卷　<input type="checkbox" class="check"> 答案键　<input type="checkbox" class="check"> LMS CSV　<input type="checkbox" class="check"> QA 报告　　随机种子/版本记录：<input style="width:210px" value="示例：3005"></p><p><input type="checkbox" class="check"> 题目事实与版权已由内容负责人复核　<input type="checkbox" class="check"> 不把样例当现行政策　<input type="checkbox" class="check"> 题量与类别配额已确认　<input type="checkbox" class="check"> 外部 LMS 连接另行处理</p><p class="small">使用边界：用于组织已审核题库；不会验证真实制度、自动连接 LMS 或替代培训负责人审阅。</p><script>
 function clearForStart(){if(!confirm('清空当前填写内容后重新开始？'))return;document.querySelectorAll('input,textarea,select').forEach(e=>{if(e.type==='checkbox'||e.type==='radio')e.checked=false;else if(e.tagName==='SELECT')e.selectedIndex=0;else e.value=''});}
 function saveFilledCopy(){const savedSelects=[...document.querySelectorAll('select')].map(e=>e.selectedIndex);const d=document.documentElement.cloneNode(true);d.querySelectorAll('input').forEach((e,i)=>{const o=d.querySelectorAll('input')[i];if(e.type==='checkbox'||e.type==='radio'){if(e.checked)o.setAttribute('checked','');else o.removeAttribute('checked')}else o.setAttribute('value',e.value)});d.querySelectorAll('textarea').forEach((e,i)=>d.querySelectorAll('textarea')[i].textContent=e.value);d.querySelectorAll('select').forEach((e,i)=>{const o=d.querySelectorAll('select')[i];o.dataset.savedIndex=String(savedSelects[i]);});const blob=new Blob(['<!doctype html>'+d.outerHTML],{type:'text/html;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=(document.title||'填写副本')+'-填写副本.html';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);}
-document.querySelectorAll('select[data-saved-index]').forEach(e=>e.selectedIndex=Number(e.dataset.savedIndex));document.querySelectorAll('select[data-saved-index]').forEach(e=>e.selectedIndex=Number(e.dataset.savedIndex));</script></body></html>
+document.querySelectorAll('select[data-saved-index]').forEach(e=>e.selectedIndex=Number(e.dataset.savedIndex));document.querySelectorAll('select[data-saved-index]').forEach(e=>e.selectedIndex=Number(e.dataset.savedIndex));</script><script id="complete-print-script">
+function clearPrintValues(){document.querySelectorAll('.print-value').forEach(e=>e.remove());}
+function preparePrintValues(){
+  clearPrintValues();
+  document.querySelectorAll('input,textarea,select').forEach(el=>{
+    const v=document.createElement('span');v.className='print-value';
+    if(el.type==='checkbox'||el.type==='radio'){v.classList.add('print-check');v.textContent=el.checked?'☑':'☐';}
+    else if(el.tagName==='SELECT'){v.textContent=el.options[el.selectedIndex]?.textContent||'';}
+    else{v.textContent=el.value||' ';}
+    el.insertAdjacentElement('afterend',v);
+  });
+}
+window.addEventListener('beforeprint',preparePrintValues);
+window.addEventListener('afterprint',clearPrintValues);
+</script></body></html>

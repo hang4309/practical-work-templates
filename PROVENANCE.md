@@ -11,3 +11,6 @@ Four XLSX workbooks were reopened and all nonempty cells and metadata inspected.
 These are human intake/checklist templates, not direct input contracts for the original programs. They do not perform automated OCR, image editing, video production, question authoring, external account integration or inventory correction. Any actual processing service requires its own input and delivery scope.
 
 The public package includes only the ten templates and these new explanatory files/notices. Browser profiles, QA copies, internal raw samples and original local absolute paths are excluded.
+
+
+Print update v0.1.1: print mode renders the current field values as wrapping text, including long notes and selected/checked values. The landscape table layout and a four-line note were checked in Chrome print media; this is not a claim of testing every printer.
