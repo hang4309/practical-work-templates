@@ -14,3 +14,7 @@ The public package includes only the ten templates and these new explanatory fil
 
 
 Print update v0.1.1: print mode renders the current field values as wrapping text, including long notes and selected/checked values. The landscape table layout and a four-line note were checked in Chrome print media; this is not a claim of testing every printer.
+
+## Office data-check training pack — v0.2.0
+
+The new material in training/pre-submit-checks contains original, AI-assisted teaching text and synthetic examples based on six asset themes. It does not distribute the upstream programs or samples. Its own provenance and MIT notice are included in that folder. Student data and answer calculations were checked for the specified exercises; no real training outcomes are claimed.
