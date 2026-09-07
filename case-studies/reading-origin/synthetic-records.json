@@ -1,0 +1,22 @@
+{
+  "illustration_only": true,
+  "original_schema_export": false,
+  "records": [
+    {
+      "example_id": "DEMO-001",
+      "channel": "channel-A",
+      "value": "12.50",
+      "unit": "demo-unit",
+      "business_module": "example-module",
+      "origin": {"status": "known", "file": "synthetic-input.txt", "line": 4}
+    },
+    {
+      "example_id": "DEMO-002",
+      "channel": "channel-B",
+      "value": "8.00",
+      "unit": "demo-unit",
+      "business_module": null,
+      "origin": {"status": "legacy_origin_unavailable", "file": null, "line": null}
+    }
+  ]
+}
