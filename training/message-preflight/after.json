@@ -1,0 +1,15 @@
+{
+  "synthetic": true,
+  "resources": {
+    "en": {"welcome": "Hello {name}", "order": "Order {order_id}", "help": "Help"},
+    "fr": {"welcome": "Bonjour {name}", "order": "Commande {order_id}", "help": "Aide"}
+  },
+  "template": "<p>Hello {{first_name}}</p><p><a href=\"{{order_url}}\">View order</a></p>",
+  "schema_fields": ["recipient_email", "first_name", "order_url", "locale"],
+  "sample": {
+    "recipient_email": "buyer@example.test",
+    "first_name": "Demo Buyer",
+    "order_url": "https://example.test/orders/DEMO-001",
+    "locale": "en"
+  }
+}

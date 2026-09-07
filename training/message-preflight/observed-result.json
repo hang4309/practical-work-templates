@@ -1,0 +1,24 @@
+{
+  "kind": "recorded_synthetic_experiment_not_a_live_audit",
+  "date": "2026-09-07",
+  "seeded_defects": 3,
+  "before": {
+    "localization_exit_code": 1,
+    "findings": [
+      {"scope": "localization", "locale": "fr", "key": "welcome", "code": "TOKEN_MISMATCH"},
+      {"scope": "localization", "locale": "fr", "key": "help", "code": "MISSING_KEY"},
+      {"scope": "notification", "variable": "tracking_url", "code": "UNKNOWN_PLACEHOLDER"},
+      {"scope": "notification", "variable": "tracking_url", "code": "MISSING_RENDER_VALUE"}
+    ],
+    "rendered_email": "<p>Hello Demo Buyer</p><p><a href=\"\">View order</a></p>"
+  },
+  "after": {
+    "localization_exit_code": 0,
+    "findings": [],
+    "rendered_email": "<p>Hello Demo Buyer</p><p><a href=\"https://example.test/orders/DEMO-001\">View order</a></p>"
+  },
+  "email_sent": false,
+  "customer_case": false,
+  "production_verified": false,
+  "engines_included": false
+}
